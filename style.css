@@ -1,0 +1,97 @@
+body {
+  font-family: 'Chewy', cursive;
+  padding: 20px;
+  background-color: #ffeefc;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #444;
+}
+
+h1 {
+  text-align: center;
+  color: #ff88aa;
+  text-shadow: 1px 1px 3px #ffcce7;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffd1dc;
+  color: #5c5c5c;
+  font-weight: bold;
+  box-shadow: 0 4px #e1a4b7;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: 'Chewy', cursive;
+}
+
+button:hover {
+  background-color: #ffb6c1;
+  box-shadow: 0 2px #e1a4b7;
+  transform: translateY(2px);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffffee;
+  border: 2px dashed #ffcce7;
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0px 4px 8px rgba(255, 182, 193, 0.4);
+  transition: transform 0.2s;
+  position: relative;
+  font-family: 'Chewy', cursive;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 12px rgba(255, 182, 193, 0.5);
+}
+
+.card h2 {
+  color: #ff88aa;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.card::before {
+  content: '⭐';
+  font-size: 1.2rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #ffffff33 25%, transparent 25%, transparent 50%, #ffffff33 50%, #ffffff33 75%, transparent 75%, transparent);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+}
